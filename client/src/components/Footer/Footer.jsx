@@ -41,7 +41,7 @@ export const Footer = () => {
       </div>
       <div className="bottom">
         <div className="left">
-          <span className="logo">Darkstore</span>
+          <span className="logo">STREETSAVVY</span>
           <span className="copyright">
             © Copyright @Aditya Tomar 2022. All Rights Reserved
           </span>

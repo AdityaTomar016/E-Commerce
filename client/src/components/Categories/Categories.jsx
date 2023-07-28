@@ -11,7 +11,7 @@ const Categories = () => {
             src="https://images.pexels.com/photos/818992/pexels-photo-818992.jpeg?auto=compress&cs=tinysrgb&w=1600"
             alt=""
           />
-          <button>
+          <button >
             <Link className="link" to="/products/1">
               Sale
             </Link>
@@ -22,7 +22,7 @@ const Categories = () => {
             src="https://images.pexels.com/photos/2036646/pexels-photo-2036646.jpeg?auto=compress&cs=tinysrgb&w=1600"
             alt=""
           />
-          <button>
+          <button className="women">
             <Link to="/products/1" className="link">
               Women
             </Link>
@@ -51,8 +51,8 @@ const Categories = () => {
                 src="https://images.pexels.com/photos/1192609/pexels-photo-1192609.jpeg?auto=compress&cs=tinysrgb&w=1600"
                 alt=""
               />
-              <button>
-                <Link to="/products/1" className="link">
+              <button className="men">
+                <Link to="/products/2" className="link menlink">
                   Men
                 </Link>
               </button>
@@ -66,7 +66,7 @@ const Categories = () => {
                 alt=""
               />
               <button>
-                <Link to="/products/1" className="link">
+                <Link to="" className="link">
                   Accessories
                 </Link>
               </button>
@@ -75,11 +75,11 @@ const Categories = () => {
         </div>
         <div className="row">
           <img
-            src="https://images.pexels.com/photos/1159670/pexels-photo-1159670.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            src="https://www.thesportreview.com/wp-content/uploads/nike-air-jordan-shoes-blue-close.jpg"
             alt=""
           />
           <button>
-            <Link to="/products/1" className="link">
+            <Link to="" className="link">
               Shoes
             </Link>
           </button>

@@ -7,12 +7,12 @@ import "./Products.scss";
 
 export const Products = () => {
   const catId = parseInt(useParams().id);
-  const [maxPrice, setMaxPrice] = useState(1000);
-  const [sort, setSort] = useState(null);
+  const [maxPrice, setMaxPrice] = useState(3000);
+  const [sort, setSort] = useState("asc");
   const [selectedSubCats, setSelectedSubCats] = useState([]);
 
   const { data, loading, error } = useFetch(
-    `/subcategories?[filters][categories][id][$eq]=${catId}`
+    `/sub-categories?[filters][categories][id][$eq]=${catId}`
   );
 
   const handleChange = (e) => {
@@ -50,7 +50,8 @@ export const Products = () => {
             <input
               type="range"
               min={0}
-              max={1000}
+              max={3000}
+              defaultValue={3000}
               onChange={(e) => setMaxPrice(e.target.value)}
             />
             <span>{maxPrice}</span>
@@ -65,6 +66,7 @@ export const Products = () => {
               value="asc"
               name="price"
               onChange={(e) => setSort("asc")}
+              defaultChecked
             />
             <label htmlFor="asc">Price (Lowest first)</label>
           </div>

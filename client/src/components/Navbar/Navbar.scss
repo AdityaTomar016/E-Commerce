@@ -1,12 +1,22 @@
 .navbar {
     height: 80px;
-  
+    // background-color: white;
+    
+    .women{
+      margin-left: 35%;
+      font-size: 28px;
+    }
+    .men{
+      margin-left: 25%;
+      font-size: 28px;
+    }
     .wrapper {
       padding: 10px 30px;
       display: flex;
       align-items: center;
       justify-content: space-between;
   
+
       .item {
         display: flex;
         align-items: center;
@@ -17,10 +27,16 @@
         display: flex;
         align-items: center;
         gap: 25px;
+        // width: ;
       }
       .center {
-        font-size: 30px;
-        letter-spacing: 2px;
+        font-size: 22px;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        // padding-top: 5px;
+        // letter-spacing: 2px;
+        // align-items: center;
+        // font-weight: bold;
       }
       .right {
         display: flex;
